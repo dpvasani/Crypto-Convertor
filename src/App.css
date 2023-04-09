@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #252525;
+  color: white;
+}
+h1,h2,h3,h4,h5,p{
+  font-family: 'Poppins', sans-serif;
+
+  margin: 0;
+}
+.converter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 300px;
+  border-radius: 2rem;
+  background: #252525;
+  box-shadow:  10px 10px 20px #1a1a1a,
+               -10px -10px 20px #303030;
+}
+
+select {
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+}
+select-items{
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+input[type="text"]{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 5px;
+  outline: none;
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.fromto {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.result h2 {
+  font-size: 2.5rem;
+}
